@@ -14,7 +14,7 @@ const AuthPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const BASE_URL = "http://localhost:9000/api";
+    const BASE_URL = "https://fit-fusion-ex.onrender.com";
     const endpoint = isLogin ? "/auth/login" : "/auth/register";
 
     try {
