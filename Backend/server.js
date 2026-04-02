@@ -28,7 +28,7 @@ app.use("/api/orders", orderRoutes);
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("FIT-FUSION API Running 🚀");
+  res.send("FIT-FUSION API Running");
 });
 
 // Handle unknown routes
