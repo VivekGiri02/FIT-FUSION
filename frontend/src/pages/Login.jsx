@@ -22,7 +22,7 @@ const AuthPage = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(isLogin 
-          ? { email: formData.email, password: formData.password } 
+          ? { email: formData.email, password: formData.password }
           : formData
         ),
       });
