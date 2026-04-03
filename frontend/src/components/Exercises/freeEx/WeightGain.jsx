@@ -47,7 +47,7 @@ const WeightGain = () => {
       <div className="max-w-3xl mx-auto">
         <header className="mb-16 text-center">
           <span className="uppercase tracking-[0.3em] text-xs text-gray-500 font-semibold mb-3 block">Mass Building</span>
-          <h1 className="text-5xl font-light tracking-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-6">
             Weight <span className="italic font-serif">Gain</span>
           </h1>
           <div className="inline-flex items-center gap-4 border-y border-gray-200 py-3 px-8">
@@ -57,7 +57,7 @@ const WeightGain = () => {
           </div>
         </header>
 
-        <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-12 border-b border-gray-200">
+        <nav className="flex justify-start gap-6 mb-12 border-b border-gray-200 overflow-x-auto whitespace-nowrap scrollbar-hide">
           {Object.keys(workoutPlan).map((day) => (
             <button
               key={day}
@@ -74,7 +74,7 @@ const WeightGain = () => {
 
         <div className="space-y-0 divide-y divide-gray-200">
           {workoutPlan[selectedDay].map((exercise, index) => (
-            <div key={index} className="group py-8 flex justify-between items-end hover:translate-x-2 transition-all duration-300">
+            <div key={index} className="group py-6 flex justify-between items-center gap-4 hover:translate-x-2 transition-all duration-300">
               <div className="space-y-1">
                 <span className="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Exercise {index + 1} — {exercise.muscle}</span>
                 <h3 className="text-2xl font-light group-hover:italic transition-all">{exercise.name}</h3>

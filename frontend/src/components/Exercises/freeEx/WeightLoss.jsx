@@ -57,7 +57,7 @@ const WeightLoss = () => {
           <span className="uppercase tracking-[0.3em] text-xs text-gray-500 font-semibold mb-3 block">
             Personal Training
           </span>
-          <h1 className="text-5xl font-light tracking-tight mb-6">
+          <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-6">
             Weight <span className="italic font-serif">Loss</span> Plan
           </h1>
           <div className="inline-flex items-center gap-4 border-y border-gray-200 py-3 px-8">
@@ -68,7 +68,7 @@ const WeightLoss = () => {
         </header>
 
         {/* Navigation */}
-        <nav className="flex justify-center gap-8 mb-12 border-b border-gray-200">
+        <nav className="flex justify-start gap-6 mb-12 border-b border-gray-200 overflow-x-auto whitespace-nowrap scrollbar-hide">
           {Object.keys(workoutPlan).map((day) => (
             <button
               key={day}
@@ -92,7 +92,7 @@ const WeightLoss = () => {
           {workoutPlan[selectedDay].map((exercise, index) => (
             <div
               key={index}
-              className="group py-8 flex justify-between items-end hover:px-4 transition-all duration-300"
+              className="group py-6 flex justify-between items-center gap-4 hover:px-4 transition-all duration-300"
             >
               <div className="space-y-1">
                 <span className="text-[10px] uppercase tracking-widest text-gray-400 font-bold">

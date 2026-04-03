@@ -63,16 +63,6 @@ const FreeTrial = () => {
               </div>
             </div>
           </div>
-          
-          {/* <div className="mt-12">
-            <div className="flex -space-x-3 mb-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-8 h-8 rounded-full border-2 border-black bg-gray-600"></div>
-              ))}
-              <div className="w-8 h-8 rounded-full border-2 border-black bg-[#F8F5F0] text-black flex items-center justify-center text-[10px] font-bold">+2k</div>
-            </div>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold">Joined the elite roster today</p>
-          </div> */}
         </div>
 
         {/* Right Side: Data Entry */}
