@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:9000/api",
+  baseURL: "https://fit-fusion-ex.onrender.com/api",
 });
 
 // Auto token attach
