@@ -50,6 +50,16 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-5 shrink-0">
+
+          {/* ADMIN PANEL BUTTON */}
+          {isLoggedIn && (
+            <button
+              onClick={() => navigate("/admin/dashboard")}
+              className="hidden lg:block text-[10px] font-black uppercase tracking-widest border-b border-gray-500 text-black-500 pb-0.5 hover:text-black hover:border-black transition-all"
+            >
+              Admin
+            </button>
+          )}
           
           {/* Membership Link */}
           {!hasMembership && (
@@ -119,11 +129,23 @@ const Navbar = () => {
                 Free Trial
               </button>
 
+              {/* ADMIN PANEL MOBILE */}
+              {isLoggedIn && (
+                <Link 
+                  to="/admin/dashboard" 
+                  onClick={toggleNavDrawer} 
+                  className="text-gray-400 text-lg"
+                >
+                  Admin
+                </Link>
+              )}
+
               {!hasMembership && (
                 <Link to="/subscribe" onClick={toggleNavDrawer} className="text-gray-400 text-lg pt-4 border-t border-gray-100">
                   Membership
                 </Link>
               )}
+
               <Link to={isLoggedIn ? "/profile" : "/login"} onClick={toggleNavDrawer} className="text-gray-400 text-lg">
                 {isLoggedIn ? "My Profile" : "Login"}
               </Link>

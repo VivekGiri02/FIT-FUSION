@@ -21,7 +21,7 @@ const Hero = () => {
         </p>
           <Link  to="/coaches"
             className="bg-[#F8F5F0] text-black px-12 py-5 rounded-full text-[12px] font-black uppercase tracking-[0.4em] hover:bg-orange-600 hover:text-white transition-all duration-500 shadow-2xl"
-            >Explor Now</Link>
+            >Explore Now</Link>
         </div>
       </div>
     </section>
