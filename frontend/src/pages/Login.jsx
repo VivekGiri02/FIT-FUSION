@@ -15,7 +15,7 @@ const AuthPage = () => {
     e.preventDefault();
 
     const BASE_URL = "https://fit-fusion-ex.onrender.com";
-    const endpoint = isLogin ? "/auth/login" : "/auth/register";
+    const endpoint = isLogin ? "/api/auth/login" : "/api/auth/register";
 
     try {
       const res = await fetch(`${BASE_URL}${endpoint}`, {
