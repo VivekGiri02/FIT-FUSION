@@ -89,11 +89,13 @@ const SupplementArrivals = () => {
                 <img src={product.img} alt={product.name} className="w-full h-full object-contain p-8 transition-transform duration-500 group-hover:scale-110" />
                 <span className="absolute top-6 left-6 bg-white text-black text-[9px] font-black px-3 py-1 uppercase rounded-full shadow-sm">{product.tag}</span>
                 <button 
-                  onClick={() => addToCart(product)}
-                  className="absolute bottom-6 right-6 w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center translate-y-20 group-hover:translate-y-0 transition-all duration-300 shadow-xl hover:bg-orange-500"
-                >
-                  <FiPlus size={20} />
-                </button>
+  onClick={() => addToCart(product)}
+  className="absolute bottom-6 right-6 w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center 
+  translate-y-0 md:translate-y-20 md:group-hover:translate-y-0 
+  transition-all duration-300 shadow-xl hover:bg-blue-600"
+>
+  <FiPlus size={20} />
+</button>
               </div>
               <div className="mt-6 flex justify-between items-start px-2">
                 <div>
